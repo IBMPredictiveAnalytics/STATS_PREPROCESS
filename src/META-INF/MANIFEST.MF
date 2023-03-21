@@ -1,0 +1,18 @@
+Name: STATS PREPROCESS
+Dialog-Specs: stats_preprocess.cfe
+Command-Specs: STATS_PREPROCESS.xml
+Code-Files: STATS_PREPROCESS.py
+Misc-Files: extsyntax.css,BSDLICENSE,defaultdialogicon.png,LICENSE,mar
+ kdown.html
+Summary: Perform selected transformations to modify variable distribut
+ ion properties
+Description: This procedure provides variable transformations for thre
+ e types of standardization, distribution transformations, and three b
+ inning transformations.  Transformed variables can update the input v
+ alues or go into another dataset.
+Version: 1.0.0
+Product-Version: 27
+Plugins: Python
+Python-Version: 3
+Python-Modules: scikit-learn,numpy
+Translation-Catalogues: 

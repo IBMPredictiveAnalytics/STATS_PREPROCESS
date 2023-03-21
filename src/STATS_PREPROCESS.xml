@@ -1,0 +1,57 @@
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Jon Peck (SPSS Inc.) -->
+<Command xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extension-1.0.xsd" Name="STATS PREPROCESS" Language="Python" LanguageVersion="3">
+	<Subcommand Name="" IsArbitrary="False" Occurrence="Optional">
+		<Parameter Name="VARIABLES" ParameterType="VariableNameList"/>
+		<Parameter Name="ID" ParameterType="VariableName"/>
+		<Parameter Name="DATASET" ParameterType="VariableName"/>
+		<Parameter Name="UPDATE" ParameterType="Keyword"/>
+		<Parameter Name="SUFFIX" ParameterType="VariableName"/>
+		<Parameter Name="SORT" ParameterType="Keyword"/>
+		<Parameter Name="SAVETRANS" ParameterType="QuotedString"/>
+		<Parameter Name="APPLYTRANS" ParameterType="QuotedString"/>
+	</Subcommand>
+	
+	<Subcommand Name="OPTIONS">
+		<Parameter Name="PRINT" ParameterType="Keyword"/>
+	</Subcommand>
+	
+	<Subcommand Name="STANDARD">
+		<Parameter Name="DOSTD" ParameterType="Keyword"/>
+		<Parameter Name="MEAN" ParameterType="Keyword"/>
+		<Parameter Name="STD" ParameterType="Keyword"/>
+	</Subcommand>
+	
+	<Subcommand Name="RANGE">
+		<Parameter Name="DORANGE" ParameterType="Keyword"/>
+		<Parameter Name="MIN" ParameterType="Number"/>
+		<Parameter Name="MAX" ParameterType="Number"/>
+		<Parameter Name="MAXABS" ParameterType="NumberList"/>
+	</Subcommand>
+	
+	<Subcommand Name="ROBUST" Occurrence="Optional">
+		<Parameter Name="DOROBUST" ParameterType="Keyword"/>
+		<Parameter Name="CENTER" ParameterType="Keyword"/>
+		<Parameter Name="SCALE" ParameterType="Keyword"/>
+		<Parameter Name="QRANGE" ParameterType="NumberList"/>
+	</Subcommand>
+	
+	<Subcommand Name="NONLINEAR" Occurrence="Optional">
+		<Parameter Name="DONONLINEAR" ParameterType="Keyword"/>
+		<Parameter Name="METHOD" ParameterType="Keyword"/>
+		<Parameter Name=" STANDARDIZE" ParameterType="Keyword"/>
+	</Subcommand>
+	
+	<Subcommand Name="QUANTILE" Occurrence="Optional">
+		<Parameter Name="DOQUANTILE" ParameterType="Keyword"/>
+		<Parameter Name="NQUANTILES" ParameterType="Integer"/>
+		<Parameter Name="DISTRIBUTION" ParameterType="Keyword"/>
+	</Subcommand>
+	
+	<Subcommand Name="KBINS" Occurrence="Optional">
+		<Parameter Name="DOKBINS" ParameterType="Keyword"/>
+		<Parameter Name="NBINS" ParameterType="Integer"/>
+		<Parameter Name="BINDEF" ParameterType="Keyword"/>
+	</Subcommand>
+	
+	<Subcommand Name="HELP" Occurrence="Optional"/>
+</Command>
