@@ -1,4 +1,5 @@
 Name: STATS PREPROCESS
+Display-Name: Preprocess Variables
 Dialog-Specs: stats_preprocess.cfe
 Command-Specs: STATS_PREPROCESS.xml
 Code-Files: STATS_PREPROCESS.py
